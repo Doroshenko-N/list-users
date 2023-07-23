@@ -1,0 +1,32 @@
+@import "./variables";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: $gray;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}

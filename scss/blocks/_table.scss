@@ -1,0 +1,47 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid $green;
+    color: $green;
+    background-color: $white;
+}
+
+th,
+td {
+    padding: 4px 10px;
+    border: 1px solid grey;
+}
+
+th {
+    width: 35%;
+
+    &:nth-child(3) {
+        width: 20%;
+    }
+
+    &:last-child {
+        width: 10%;
+    }
+}
+
+td {
+    &:last-child {
+        display: flex;
+        justify-content: center;
+        border: none;
+        // border-bottom: 1px solid $green;
+    }
+}
+
+.btn-remove {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    color: $white;
+    background-color: $green;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

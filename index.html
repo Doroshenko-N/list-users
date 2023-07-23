@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <section class="user">
+        <div class="container">
+            <h1 class="user__title">
+                Список пользователей
+            </h1>
+            <form action="" class="user__form" id="form">
+                <input id="nameInp" type="text" class="user__form-input" required placeholder="Имя*" autocomplete="off">
+                <input id="surNameInp" type="text" class="user__form-input" required placeholder="Фамилия*"
+                    autocomplete="off">
+                <input id="EmailInp" type="email" class="user__form-input" required placeholder="Email*"
+                    autocomplete="off">
+                <button id="btnForm" class="user__form-btn">Добавить</button>
+            </form>
+            <ul id="userList" class="user__list">
+                <li id="headerItem" class="user__item user__item-header">
+                    <ul class="user__sublist">
+                        <li class="user__subitem">
+                            Имя
+                        </li>
+                        <li class="user__subitem">
+                            Фамилия
+                        </li>
+                        <li class="user__subitem">
+                            Email
+                        </li>
+                        <li class="user__subitem">
+                            Действие
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script defer type="module" src="js/main.js"></script>
+</body>
+
+</html>

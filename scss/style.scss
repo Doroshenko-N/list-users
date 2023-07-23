@@ -1,0 +1,148 @@
+@import "./general";
+@import "./variables";
+
+.user {
+    &__title {
+        text-align: center;
+        margin-bottom: $gap30;
+        letter-spacing: 3px;
+        color: $green;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: $gap30;
+        margin-bottom: $gap30;
+
+        &-input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            color: $green;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.4s;
+            -webkit-transition: background-color 0.4s;
+            -moz-transition: background-color 0.4s;
+            -ms-transition: background-color 0.4s;
+            -o-transition: background-color 0.4s;
+
+            &:hover {
+                background-color: $hover;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $green;
+            }
+        }
+
+        &-btn {
+            font-weight: 700;
+            padding: 0 20px;
+            color: $white;
+            background-color: $green;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            transition:
+                background-color 0.4s,
+                transform 0.4s;
+            -webkit-transition:
+                background-color 0.4s,
+                transform 0.4s;
+            -moz-transition:
+                background-color 0.4s,
+                transform 0.4s;
+            -ms-transition:
+                background-color 0.4s,
+                transform 0.4s;
+            -o-transition:
+                background-color 0.4s,
+                transform 0.4s;
+            &:hover {
+                background-color: $hover;
+            }
+
+            &:active {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid $green;
+        background-color: $white;
+        color: $green;
+    }
+
+    &__item-header {
+        text-align: center;
+    }
+
+    &__sublist {
+        display: grid;
+        grid-template-columns: 30% 30% 25% 15%;
+    }
+
+    &__subitem {
+        padding: 5px 15px;
+        border: 1px solid $green;
+
+        &-action {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__remove-btn {
+        padding: 3px 15px;
+        color: $white;
+        background-color: $green;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition:
+            background-color 0.4s,
+            transform 0.4s;
+        -webkit-transition:
+            background-color 0.4s,
+            transform 0.4s;
+        -moz-transition:
+            background-color 0.4s,
+            transform 0.4s;
+        -ms-transition:
+            background-color 0.4s,
+            transform 0.4s;
+        -o-transition:
+            background-color 0.4s,
+            transform 0.4s;
+        &:hover {
+            background-color: $hover;
+        }
+
+        &:active {
+            background-color: rgb(228, 7, 7);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    }
+}

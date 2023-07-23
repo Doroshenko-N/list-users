@@ -1,0 +1,5 @@
+@media (max-width: 1100px) {
+  .user__form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=media.css.map */
